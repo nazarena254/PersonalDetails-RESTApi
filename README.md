@@ -49,7 +49,7 @@ from .models import MoringaMerch
 class MerchSerializer(serializers.ModelSerializer):
     class Meta:
         model = MoringaMerch
-        fields = ('name', 'description', 'price')  OR  __all__
+        fields = ('name', 'description', 'price')   OR fields =' __all__'
 ```
 * Then create urls for api in project/urls.py
 * We configure our API to also allow us to add data to our database in views.py
