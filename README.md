@@ -1,5 +1,5 @@
 ## REST API
-Its a simple ajax form that allows user to enter personal details through a form and acess those details from database using Api.
+Its a simple web django application that allows user to enter personal details through a form and acess those details from database using Api.
 
 ### Author
 Nazarena Wambura.</br>
