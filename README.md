@@ -1,5 +1,5 @@
-## RESTful API
-Its a simple ajax form that allows user to enter details.
+## REST API
+Its a simple ajax form that allows user to enter personal details through a form and acess those details from database using Api.
 
 ### Author
 Nazarena Wambura.</br>
