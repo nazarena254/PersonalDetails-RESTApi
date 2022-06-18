@@ -6,8 +6,8 @@ Nazarena Wambura.</br>
 [Github Account](https://github.com/nazarena254)
 
 
-<!-- ### Homepage
-![Ajax-Forms](homepg.png) -->
+### Homepage
+![PersonalDetailsApi](./apiapp/static/images/homepg.png)
 
 ### Setup/Installation Requirements
 1. Create a folder and cd to it.
