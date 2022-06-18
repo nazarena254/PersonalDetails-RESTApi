@@ -6,9 +6,8 @@ class PersonalDetails(models.Model):
     last_name = models.CharField(max_length=50)
     Age = models.IntegerField()
     gender = models.CharField(max_length=30)
-    occupation = models.CharField(max_length=50)
+    speciality = models.CharField(max_length=50)
     campus = models.CharField(max_length=50)
-    bio = models.TextField()
     
     
     def __str__(self):
