@@ -5,7 +5,6 @@ Its a simple web django application that allows user to enter personal details t
 Nazarena Wambura.</br>
 [Github Account](https://github.com/nazarena254)
 
-
 ### Homepage
 ![PersonalDetailsApi](./apiapp/static/images/homepg.png)
 
@@ -22,6 +21,13 @@ Nazarena Wambura.</br>
 ### Running the Application
 1. Run main aplication locally on http://127.0.0.1:8000/ local host<br>    
    * python3.9 manage.py runserver<br>
+
+### License & Contact Information
+For any further inquiries, bugs, contributions or comments, reach me at:<br>
+Email:<nancyngunjiri1@gmail.com> <br/>
+[MIT License](https://github.com/nazarena254/PersonalDetails-RESTApi/blob/master/LICENSE)<br>
+Copyright (c) 2021 **Nazarena Wambura**
+
 
 # RESTful API Notes
 ## RESTful API
