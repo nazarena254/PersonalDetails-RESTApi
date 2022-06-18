@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class personalDetails(models.Model):
+class PersonalDetails(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     Age = models.IntegerField()
