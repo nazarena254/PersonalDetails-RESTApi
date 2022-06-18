@@ -33,8 +33,8 @@ def next(request):
 class PersonalDetailsList(APIView):
     def get(self, request, format=None):
         #querying from the database(students table)
-        students = PersonalDetails.objects.all()
-        serializers = PersonalDetailsSerializer(students, many=True)
+        persons = PersonalDetails.objects.all()
+        serializers = PersonalDetailsSerializer(persons, many=True)
         
         #JSON RESPONSE
         return Response(serializers.data)
@@ -51,21 +51,21 @@ class PersonalDetailsList(APIView):
 #accessing a single item
 class PersonalDetailsDescription(APIView):
     permission_classes = (IsAdminOrReadOnly,)
-    def get_single_student(self, pk):
+    def get_single_person(self, pk):
         try:
             return PersonalDetails.objects.get(pk=pk)
         except PersonalDetails.DoesNotExist:
             return Http404
 
     def get(self, request, pk, format=None):
-        single_student = self.get_single_student(pk)
-        serializers = PersonalDetailsSerializer(single_student)
+        single_person = self.get_single_person(pk)
+        serializers = PersonalDetailsSerializer(single_person)
         return Response(serializers.data)
     
     #PUT ---> Update our single item    
     def put(self, request, pk, format=None):
-        single_student = self.get_single_student(pk)
-        serializers = PersonalDetailsSerializer(single_student, request.data)
+        single_person = self.get_single_person(pk)
+        serializers = PersonalDetailsSerializer(single_person, request.data)
         if serializers.is_valid():
             serializers.save()
             return Response(serializers.data)
@@ -75,6 +75,6 @@ class PersonalDetailsDescription(APIView):
         
     #    DELETE METHOD
     def delete(self, request, pk, format=None):
-        delete_student = self.get_single_student(pk)
-        delete_student.delete()
+        delete_person = self.get_single_person(pk)
+        delete_person.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
